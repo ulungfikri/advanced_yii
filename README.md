@@ -14,7 +14,7 @@ Extract and Rename Advanced to Advanced_yii
 
 Open Command Prompt
 
-move to folder c:xampp\php>
+move to folder c:\xampp\php>
 
 Either run
 ```
