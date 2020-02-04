@@ -35,4 +35,4 @@ composer require kartik-v/yii2-mpdf "dev-master"
 
 Running Apache and Open Browser http://localhost/advanced_yii/frontend/web/index.php?r=site/report
 
->Edit File SiteController.php and _reportView.php
+>Edit File in Frontend -> SiteController.php and _reportView.php
