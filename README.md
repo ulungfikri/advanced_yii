@@ -33,7 +33,6 @@ Either run
 composer require kartik-v/yii2-mpdf "dev-master"
 ```
 
-Running Apache Xampp
-Open Browser http://localhost/advanced_yii/frontend/web/index.php?r=site/report
+Running Apache and Open Browser http://localhost/advanced_yii/frontend/web/index.php?r=site/report
 
 >Edit File SiteController.php and _reportView.php
