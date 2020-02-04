@@ -32,7 +32,7 @@ class SiteController extends Controller
         // setup kartik\mpdf\Pdf component
         $pdf = new Pdf([
             // set to use core fonts only
-            'mode' => Pdf::MODE_CORE, 
+            'mode' => Pdf::MODE_UTF8, 
             // A4 paper format
             'format' => Pdf::FORMAT_A4, 
             // portrait orientation
@@ -47,10 +47,10 @@ class SiteController extends Controller
             // any css to be embedded if required
             'cssInline' => '.kv-heading-1{font-size:18px}', 
              // set mPDF properties on the fly
-            'options' => ['title' => 'Krajee Report Title'],
+            'options' => ['title' => 'Report Title'],
              // call mPDF methods on the fly
             'methods' => [ 
-                'SetHeader'=>['Krajee Report Header'], 
+                'SetHeader'=>['Report Header'], 
                 'SetFooter'=>['{PAGENO}'],
             ]
         ]);

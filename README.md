@@ -10,7 +10,7 @@
 
 ## Install Yii advanced
 
-Extract and Rename Advenced to Advanced_yii
+Extract and Rename Advanced to Advanced_yii
 
 Open Command Prompt
 
@@ -26,13 +26,14 @@ php.exe c:/xampp/htdocs/advanced_yii/init
 
 Dont Forget Composer Install
 
-move to folder c:xampp\php>
-
-c:\xampp\htdocs\advanced_yii>
-
-composer require kartik-v/yii2-mpdf "dev-master"
+move to folder c:\xampp\htdocs\advanced_yii>
 
 Either run
 ```
 composer require kartik-v/yii2-mpdf "dev-master"
 ```
+
+Running Apache Xampp
+Open Browser http://localhost/advanced_yii/frontend/web/index.php?r=site/report
+
+>Edit File SiteController.php and _reportView.php
