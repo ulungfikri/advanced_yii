@@ -33,6 +33,7 @@ class SiteController extends Controller
         $pdf = new Pdf([
             // set to use core fonts only
             'mode' => Pdf::MODE_UTF8, 
+            'filename' => 'report_' . date('d-m-Y') . '.pdf',
             // A4 paper format
             'format' => Pdf::FORMAT_A4, 
             // portrait orientation
@@ -42,10 +43,20 @@ class SiteController extends Controller
             // your html content input
             'content' => $content,  
             // format content from your own css file if needed or use the
-            // enhanced bootstrap css built by Krajee for mPDF formatting 
+            // enhanced bootstrap css built for mPDF formatting 
             'cssFile' => '@vendor/kartik-v/yii2-mpdf/src/assets/kv-mpdf-bootstrap.min.css',
             // any css to be embedded if required
-            'cssInline' => '.kv-heading-1{font-size:18px}', 
+            'cssInline' => 
+
+            'table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+             }
+              th, td {
+              padding: 5px;
+              text-align: left;    
+             }',
+
              // set mPDF properties on the fly
             'options' => ['title' => 'Report Title'],
              // call mPDF methods on the fly
