@@ -41,3 +41,11 @@ phpunit.phar
 /backend/web/index.php
 /backend/web/index-test.php
 /backend/web/robots.txt
+
+/frontend/views/site/dks_ciler_footer.php
+/frontend/views/site/dks_ciler_header.php
+/frontend/views/site/dks_ciler_value.php
+
+/frontend/views/site/dks_footer.php
+/frontend/views/site/dks_header.php
+/frontend/views/site/dks_value.php
