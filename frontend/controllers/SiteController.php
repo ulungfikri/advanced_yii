@@ -25,108 +25,14 @@ class SiteController extends Controller
      * {@inheritdoc}
      */
 
-    public function actionReport() {
-        // get your HTML raw content without any layouts or scripts
-        $content = $this->renderPartial('_reportView');
-        
-        // setup kartik\mpdf\Pdf component
-        $pdf = new Pdf([
-            // set to use core fonts only
-            'mode' => Pdf::MODE_UTF8, 
-            'filename' => 'report_' . date('d-m-Y') . '.pdf',
-            // A4 paper format
-            'format' => Pdf::FORMAT_A4, 
-            // portrait orientation
-            'orientation' => Pdf::ORIENT_PORTRAIT, 
-            // stream to browser inline
-            'destination' => Pdf::DEST_BROWSER, 
-            // your html content input
-            'content' => $content,  
-            // format content from your own css file if needed or use the
-            // enhanced bootstrap css built for mPDF formatting 
-            'cssFile' => '@vendor/kartik-v/yii2-mpdf/src/assets/kv-mpdf-bootstrap.min.css',
-            // any css to be embedded if required
-            'cssInline' => 
-
-            'table, th, td {
-              border: 1px solid black;
-              border-collapse: collapse;
-             }
-              th, td {
-              padding: 5px;
-              text-align: left;    
-             }',
-
-             // set mPDF properties on the fly
-            'options' => ['title' => 'Report Title'],
-             // call mPDF methods on the fly
-            'methods' => [ 
-                'SetHeader'=>['<div class="header">Report Header</div>'], 
-                'SetFooter'=>['{PAGENO}'],
-            ]
-        ]);
-        
-        // return the pdf output as per the destination setting
-        return $pdf->render(); 
-    }
-
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'only' => ['logout', 'signup'],
-                'rules' => [
-                    [
-                        'actions' => ['signup'],
-                        'allow' => true,
-                        'roles' => ['?'],
-                    ],
-                    [
-                        'actions' => ['logout'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
-                'class' => 'yii\captcha\CaptchaAction',
-                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-        ];
-    }
-
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
-    public function actionIndex()
+    public function actionReportciler() 
     {
         // return $this->render('index');
 
         // get your HTML raw content without any layouts or scripts
-        $content_value = $this->renderPartial('dks_value');
-        $content_header = $this->renderPartial('dks_header');
-        $content_footer = $this->renderPartial('dks_footer');
+        $content_value = $this->renderPartial('dks_ciler_value');
+        $content_header = $this->renderPartial('dks_ciler_header');
+        $content_footer = $this->renderPartial('dks_ciler_footer');
         
         // setup kartik\mpdf\Pdf component
         $pdf = new Pdf([
@@ -191,6 +97,130 @@ class SiteController extends Controller
         
         // return the pdf output as per the destination setting
         return $pdf->render(); 
+        // return $this->render('index');
+    }
+
+    public function behaviors()
+    {
+        return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['logout', 'signup'],
+                'rules' => [
+                    [
+                        'actions' => ['signup'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
+                    [
+                        'actions' => ['logout'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'logout' => ['post'],
+                ],
+            ],
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function actions()
+    {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+            'captcha' => [
+                'class' => 'yii\captcha\CaptchaAction',
+                'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+            ],
+        ];
+    }
+
+    /**
+     * Displays homepage.
+     *
+     * @return mixed
+     */
+    public function actionIndex()
+    {
+        return $this->render('index');
+
+        // // get your HTML raw content without any layouts or scripts
+        // $content_value = $this->renderPartial('dks_value');
+        // $content_header = $this->renderPartial('dks_header');
+        // $content_footer = $this->renderPartial('dks_footer');
+        
+        // // setup kartik\mpdf\Pdf component
+        // $pdf = new Pdf([
+        //     // set to use core fonts only
+        //     'mode' => Pdf::MODE_CORE, 
+        //     // A4 paper format
+        //     'format' => Pdf::FORMAT_A4, 
+        //     // portrait orientation
+        //     'orientation' => Pdf::ORIENT_LANDSCAPE, 
+        //     // stream to browser inline
+        //     'destination' => Pdf::DEST_BROWSER, 
+        //     // your html content input
+        //     'content' => $content_value,  
+        //     // ruler
+        //     'marginHeader' => 0,  
+        //     'marginTop' => 74,  
+        //     'marginFooter' => -7,  
+        //     'marginBottom' => 26,  
+        //     'marginLeft' => 9,  
+        //     'marginRight' => -8,  
+        //     // 'disableBorderHeader' => true,  
+        //     // format content from your own css file if needed or use the
+        //     // enhanced bootstrap css built by Krajee for mPDF formatting 
+        //     // 'cssFile' => '@vendor/kartik-v/yii2-mpdf/src/assets/custom.css',
+        //     // any css to be embedded if required
+        //     // 'cssInline' => '.kv-heading-2{font-size:50px}', 
+        //     'cssInline' => "
+        //         .table td 
+        //         {
+        //             text-align: center; 
+        //             vertical-align: middle;
+        //             white-space: nowrap;
+        //         }
+        //         .table_value td
+        //         {
+        //             font-size: 55%;
+        //             // white-space: nowrap;
+        //             display: inline-block;
+        //         }
+        //         .table_catatan, .table_analisa, .table_summary {
+        //             page-break-inside: avoid;
+        //         }
+        //         .div_table_catatan, .div_table_analisa, .div_table_summary {
+        //             // border: 1px solid #4CAF50;
+        //             padding-bottom: -10px;
+        //         }", 
+        //     // set mPDF properties on the fly
+        //     'options' => [
+        //         'title' => 'Krajee Report Title',
+        //     ],
+        //     // call mPDF methods on the fly
+        //     'methods' => [ 
+        //         // 'SetHeader'=>['CABANG / STOCK POINT  :  FBSLT||'], 
+        //         // 'SetFooter'=>['FRM-SLS-002.A Rev 04||Last Update 24-12-2018 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Printed By E-FastOne'],
+        //         // 'SetHTMLFooterByName'=>'<html>asdasdasdasdasd</html>',
+        //         // 'SetHeader'=>false, 
+        //         // 'SetFooter'=>false,
+        //         'SetHeader'=>[$content_header],
+        //         'SetFooter'=>[$content_footer],
+        //     ]
+        // ]);
+        
+        // // return the pdf output as per the destination setting
+        // return $pdf->render(); 
         // return $this->render('index');
     }
 
