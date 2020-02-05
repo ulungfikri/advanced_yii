@@ -32,7 +32,6 @@ class SiteController extends Controller
         // get your HTML raw content without any layouts or scripts
         $content = $this->renderPartial('_reportview');
         
-        
         // setup kartik\mpdf\Pdf component
         $pdf = new Pdf([
             // set to use core fonts only
