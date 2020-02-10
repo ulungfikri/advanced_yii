@@ -29,7 +29,7 @@
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td width="0.5%">&nbsp;</td>
+    <!--     <td width="0.5%">&nbsp;</td> -->
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
@@ -127,6 +127,8 @@
         <td></td>
         <td></td>
     </tr>
+
+
     <!-- header -->
     <tr>
         <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=7 height="25"><b>DATA KUNJUNGAN SALESMAN</b></td>
@@ -313,6 +315,8 @@
         <td></td>
         <td></td>
     </tr>
+
+    
     <tr>
         <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2>NO</td>
         <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" width="" rowspan=2>TOKO</td>
