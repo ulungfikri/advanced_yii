@@ -36,7 +36,7 @@
             <th height="1" width="16"></th> <!-- 18 -->
             <th height="1" width="16"></th> <!-- 19 -->
             <th height="1" width="16"></th> <!--Lain Lain-->
-            <th height="1" width="73"></th> --> <!--Keterangan-->
+            <th height="1" width="73"></th> <!--Keterangan-->
             <!-- <th height="1"></th>
             <th height="1"></th>
             <th height="1"></th> -->
