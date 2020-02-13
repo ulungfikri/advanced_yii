@@ -8,14 +8,19 @@
             <th height="1" width="70"></th> <!--Toko-->
             <th height="1"></th>
 
-            <th height="1" width="78"></th> <!--Alamat-->
+            <th height="1" width="76"></th> <!--Alamat-->
             <th height="1"></th>
 
             <th height="1" width="95"></th> <!--GPS Koordinat-->
             <!-- <th height="1"></th> -->
 
-            <th height="1" width="30"></th> <!--GPS Koordinat-->
+            <th height="1" width="30"></th> <!--Card Flag-->
+            <th height="1" width="30"></th> <!--Profile Class-->
+            <th height="1" width="15"></th> <!--Manual/ Scanner-->
+            <th height="1" width="15"></th> <!--Tiba-->
+            <th height="1" width="70"></th> <!--Photo Tiba-->
 
+            <th height="1" width="15"></th> <!--Manual/ Scanner-->
 
         </tr>
         
@@ -187,8 +192,8 @@
             </tr>
             <tr>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="3" align="center" valign=middle><font color="#000000">SURVEY</font></td>
-                <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="left" colspan="4" valign=middle><font color="#000000">STATUS SCAN : M</font></td>
-                <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="left" colspan="4" valign=middle><font color="#000000">STATUS SCAN : S</font></td>
+                <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="left" colspan="3" valign=middle><font color="#000000">STATUS SCAN : M</font></td>
+                <td style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan="2" align="left" colspan="5" valign=middle><font color="#000000">STATUS SCAN : S</font></td>
                 <!-- <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle>&nbsp;</td>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle>&nbsp;</td>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle>&nbsp;</td>
@@ -267,8 +272,8 @@
             </tr>
             <tr>
                 <!-- <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle><font color="#000000">-6.4662886/106.8562463</font></td> -->
-                <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="left" valign=middle>Barcode Fastana:</td>
-                <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="4" align="left" valign=middle>Barcode Prinsipal: B0017297</td>
+                <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="3" align="left" valign=middle>Barcode Fastana:</td>
+                <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan="5" align="left" valign=middle>Barcode Prinsipal: B0017297</td>
                 <!-- <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle>&nbsp;</td>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle>&nbsp;</td>
                 <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle>&nbsp;</td>
