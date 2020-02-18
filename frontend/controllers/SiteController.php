@@ -140,6 +140,81 @@ class SiteController extends Controller
         // return $this->render('index');
     }
 
+    public function actionReportcilerbdg29() 
+    {
+        // return $this->render('index');
+
+        // get your HTML raw content without any layouts or scripts
+        $content_value = $this->renderPartial('dks_ciler_value_bdg29');
+        $content_header = $this->renderPartial('dks_ciler_header_bdg29');
+        $content_footer = $this->renderPartial('dks_ciler_footer_bdg29');
+        
+        // setup kartik\mpdf\Pdf component
+        $pdf = new Pdf([
+            // set to use core fonts only
+            'mode' => Pdf::MODE_CORE, 
+            // A4 paper format
+            'format' => Pdf::FORMAT_A4, 
+            // portrait orientation
+            'orientation' => Pdf::ORIENT_LANDSCAPE, 
+            // stream to browser inline
+            'destination' => Pdf::DEST_BROWSER, 
+            // your html content input
+            'content' => $content_value,  
+            // ruler
+            'marginHeader' => 0,  
+            'marginTop' => 74,  
+            'marginFooter' => -7,  
+            'marginBottom' => 26,  
+            'marginLeft' => 9,  
+            'marginRight' => -8,  
+            // 'disableBorderHeader' => true,  
+            // format content from your own css file if needed or use the
+            // enhanced bootstrap css built by Krajee for mPDF formatting 
+            // 'cssFile' => '@vendor/kartik-v/yii2-mpdf/src/assets/custom.css',
+            // any css to be embedded if required
+            // 'cssInline' => '.kv-heading-2{font-size:50px}', 
+            'cssInline' => "
+                .table td 
+                {
+                    text-align: center; 
+                    vertical-align: middle;
+                    white-space: nowrap;
+                }
+                .table_value td
+                {
+                    font-size: 55%;
+                    // white-space: nowrap;
+                    display: inline-block;
+                }
+                .table_catatan, .table_analisa, .table_summary {
+                    page-break-inside: avoid;
+                }
+                .div_table_catatan, .div_table_analisa, .div_table_summary {
+                    // border: 1px solid #4CAF50;
+                    padding-bottom: -10px;
+                }", 
+            // set mPDF properties on the fly
+            'options' => [
+                'title' => 'Krajee Report Title',
+            ],
+            // call mPDF methods on the fly
+            'methods' => [ 
+                // 'SetHeader'=>['CABANG / STOCK POINT  :  FBSLT||'], 
+                // 'SetFooter'=>['FRM-SLS-002.A Rev 04||Last Update 24-12-2018 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Printed By E-FastOne'],
+                // 'SetHTMLFooterByName'=>'<html>asdasdasdasdasd</html>',
+                // 'SetHeader'=>false, 
+                // 'SetFooter'=>false,
+                'SetHeader'=>[$content_header],
+                'SetFooter'=>[$content_footer],
+            ]
+        ]);
+        
+        // return the pdf output as per the destination setting
+        return $pdf->render(); 
+        // return $this->render('index');
+    }
+
     public function behaviors()
     {
         return [
