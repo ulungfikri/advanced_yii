@@ -21,7 +21,10 @@
             <th height="1" width="70"></th> <!--Photo Tiba-->
 
             <th height="1" width="15"></th> <!--Manual/ Scanner-->
+            <th height="1" width="15"></th> <!--Keluar-->
+            <th height="1" width="70"></th> <!--Photo Keluar-->
 
+            <th height="1" width="15"></th> <!--Efektif-->
         </tr>
         
         <!-- isi -->
@@ -42,7 +45,7 @@
             </td>
             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font color="#000000">S</font>
             </td>
-            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle sdval="0.447222222222222" sdnum="1033;1033;H:MM"><font color="#000000">14</font>
+            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle sdval="0.447222222222222" sdnum="1033;1033;H:MM"><font color="#000000">14.33</font>
             </td>
 
             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font color="#000000"></font>
@@ -50,13 +53,13 @@
 
             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font color="#000000">S</font>
             </td>
-            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle sdval="0.447916666666667" sdnum="1033;1033;H:MM"><font color="#000000">14</font>
+            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle sdval="0.447916666666667" sdnum="1033;1033;H:MM"><font color="#000000">14.53</font>
             </td>
 
             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font color="#000000"></font>
             </td>
 
-            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle sdval="0.000694444444444444" sdnum="1033;1033;H:MM"><font color="#000000">00</font>
+            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle sdval="0.000694444444444444" sdnum="1033;1033;H:MM"><font color="#000000">00.19</font>
             </td>
             <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle>1 <!--Good Mood-->
             </td>

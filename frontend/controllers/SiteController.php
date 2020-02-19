@@ -92,7 +92,7 @@ class SiteController extends Controller
             'marginFooter' => -7,  
             'marginBottom' => 26,  
             'marginLeft' => 9,  
-            'marginRight' => -8,  
+            'marginRight' => 3,  
             // 'disableBorderHeader' => true,  
             // format content from your own css file if needed or use the
             // enhanced bootstrap css built by Krajee for mPDF formatting 
@@ -167,7 +167,7 @@ class SiteController extends Controller
             'marginFooter' => -7,  
             'marginBottom' => 26,  
             'marginLeft' => 9,  
-            'marginRight' => -8,  
+            'marginRight' => 10,  
             // 'disableBorderHeader' => true,  
             // format content from your own css file if needed or use the
             // enhanced bootstrap css built by Krajee for mPDF formatting 
